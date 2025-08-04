@@ -4,7 +4,7 @@ A beautifully designed, fully responsive travel website that showcases top Dubai
 A beautifully designed, fully responsive travel website that showcases top Dubai destinations, curated experiences, and a seamless booking system. Built with HTML, CSS, and vanilla JavaScript optimized for both desktop and mobile users with a modern UI and interactive elements like popup booking forms and a hamburger menu.
 # 🌴 Visit Dubai – A Responsive Travel Website
 
-**Live Demo:** ([https://trustsdesigns.github.io/dubai-travel-site)](https://trustdesigns.github.io/dubai-travel-site/)
+**Live Demo:** (https://trustdesigns.github.io/dubaitravel/)
 
 
 About the Project
