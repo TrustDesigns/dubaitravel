@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book an Experience | Visit Dubai</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+ <nav class="navbar">
+  <h1><a href="index.html">Visit Dubai</a></h1>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+
+  <!-- Navigation Links -->
+  <ul id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="experiences.html">Experiences</a></li>
+<li><a href="book.html" class="active">Book</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+  </ul>
+</nav>
+
+
+  <header class="page-hero">
+    <h2>Book Your Dubai Experience</h2>
+    <p>Select your adventure, choose a date, and start the journey of a lifetime.</p>
+  </header>
+
+  <section class="booking-grid">
+  <div class="booking-card">
+    <img src="safari1.jpg" alt="Desert Safari" />
+    <h3>Desert Safari</h3>
+    <label>Select Date:
+      <input type="date" />
+    </label>
+    <button class="confirm-btn" data-experience="Desert Safari">Confirm Booking</button>
+  </div>
+
+  <div class="booking-card">
+    <img src="skydiving.jpg" alt="Skydiving" />
+    <h3>Skydiving</h3>
+    <label>Select Date:
+      <input type="date" />
+    </label>
+    <button class="confirm-btn" data-experience="Skydiving">Confirm Booking</button>
+  </div>
+
+  <div class="booking-card">
+    <img src="yatch.jpg" alt="Yacht" />
+    <h3>Private Yacht Tour</h3>
+    <label>Select Date:
+      <input type="date" />
+    </label>
+    <button class="confirm-btn" data-experience="Private Yacht Tour">Confirm Booking</button>
+  </div>
+
+  <div class="booking-card">
+    <img src="Spa Date.jpg" alt="Luxury Spa" />
+    <h3>Luxury Spa</h3>
+    <label>Select Date:
+      <input type="date" />
+    </label>
+    <button class="confirm-btn" data-experience="Luxury Spa">Confirm Booking</button>
+  </div>
+
+  <div class="booking-card">
+    <img src="cruise dinner.jpg" alt="Show Cruise" />
+    <h3>Show Dinner Cruise</h3>
+    <label>Select Date:
+      <input type="date" />
+    </label>
+    <button class="confirm-btn" data-experience="Show Dinner Cruise">Confirm Booking</button>
+  </div>
+
+  <div class="booking-card">
+    <img src="themepark.jpg" alt="Theme Parks" />
+    <h3>Theme Park Adventure</h3>
+    <label>Select Date:
+      <input type="date" />
+    </label>
+    <button class="confirm-btn" data-experience="Theme Park Adventure">Confirm Booking</button>
+  </div>
+</section>
+
+<div id="popup-form" class="popup-overlay">
+  <div class="popup-box">
+    <span id="close-popup">&times;</span>
+    <h3 id="popup-title">Book Experience</h3>
+
+    <form id="booking-form">
+      <label for="full-name">Full Name</label>
+      <input type="text" id="full-name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+
+      <label for="guests">Number of Guests</label>
+      <input type="number" id="guests" min="1" required />
+
+      <button type="submit" class="confirm-btn">Submit Booking</button>
+    </form>
+
+    <div id="success-message" style="display: none; text-align: center;">
+      <h4>🎉 Booking Confirmed!</h4>
+      <p>Thank you for choosing us. We'll be in touch soon!</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.confirm-btn');
+  const popup = document.getElementById('popup-form');
+  const closeBtn = document.getElementById('close-popup');
+  const popupTitle = document.getElementById('popup-title');
+  const form = document.getElementById('booking-form');
+  const successMessage = document.getElementById('success-message');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const experience = button.getAttribute('data-experience');
+      popupTitle.textContent = `Book: ${experience}`;
+      popup.style.display = 'flex';
+      successMessage.style.display = 'none'; // Reset
+      form.style.display = 'block';
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === popup) {
+      popup.style.display = 'none';
+    }
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // prevent reload
+    form.style.display = 'none';
+    successMessage.style.display = 'block';
+
+    // Optionally clear form fields
+    form.reset();
+
+    // Auto-close popup after 3 seconds
+    setTimeout(() => {
+      popup.style.display = 'none';
+    }, 3000);
+  });
+</script>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+
+
+  <footer class="footer">
+    <p>© 2025 Visit Dubai | Designed by Trust'sDesigns 💚</p>
+  </footer>
+</body>
+</html>

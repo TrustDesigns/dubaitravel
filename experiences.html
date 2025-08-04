@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dubai Experiences</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+  <h1><a href="index.html">Visit Dubai</a></h1>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+
+  <!-- Navigation Links -->
+  <ul id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destinations.html">Destinations</a></li>
+    <li><a href="experiences.html" class="active">Experiences</a></li>
+    <li><a href="book.html">Book</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <header class="page-hero">
+    <h2>Unforgettable Experiences in Dubai</h2>
+    <p>Live the magic of the desert, the luxury of the skyline, and the thrill of adventure.</p>
+  </header>
+
+  <section class="experiences-grid">
+    <div class="experience-card">
+      <img src="Safari.jpg" alt="Desert Safari">
+      <h3>Desert Safari</h3>
+      <p>Explore golden dunes, camel rides, and sunset dinners in the heart of the desert.</p>
+      <a href="book.html" class="book-btn">Book Now</a>
+    </div>
+
+    <div class="experience-card">
+      <img src="skydiving.jpg" alt="Skydiving">
+      <h3>Skydiving</h3>
+      <p>Free-fall over Palm Jumeirah with a certified instructor and a GoPro memory!</p>
+      <a href="book.html" class="book-btn">Book Now</a>
+    </div>
+
+    <div class="experience-card">
+      <img src="Spa Date.jpg" alt="Luxury Spa">
+      <h3>Luxury Spa Day</h3>
+      <p>Rejuvenate in Dubai’s best hammams, spas, and wellness lounges.</p>
+      <a href="book.html" class="book-btn">Book Now</a>
+    </div>
+
+    <div class="experience-card">
+      <img src="cruise dinner.jpg" alt="Dhow Cruise">
+      <h3>Show Dinner Cruise</h3>
+      <p>Enjoy a romantic dinner on a traditional dhow boat along the Dubai Creek.</p>
+      <a href="book.html" class="book-btn">Book Now</a>
+    </div>
+
+    <div class="experience-card">
+      <img src="themepark.jpg" alt="Theme Parks">
+      <h3>Theme Park Adventures</h3>
+      <p>Thrills await at Motiongate, IMG Worlds, and other family-friendly parks.</p>
+      <a href="book.html" class="book-btn">Book Now</a>
+    </div>
+
+    <div class="experience-card">
+      <img src="yatch tour.jpg" alt="Yacht Tour">
+      <h3>Private Yacht Tour</h3>
+      <p>Soak in Dubai's skyline from the water aboard a luxury yacht.</p>
+      <a href="book.html" class="book-btn">Book Now</a>
+    </div>
+  </section>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+  <footer class="footer">
+    <p>© 2025 Visit Dubai | Designed by Trust'sDesigns 💚</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dubai Destinations</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+ <nav class="navbar">
+  <h1><a href="index.html">Visit Dubai</a></h1>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+
+  <!-- Navigation Links -->
+  <ul id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destinations.html" class="active">Destinations</a></li>
+    <li><a href="experiences.html">Experiences</a></li>
+    <li><a href="book.html">Book</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <header class="page-hero">
+    <h2>Explore Dubai’s Must-Visit Places</h2>
+    <p>From towering skyscrapers to tranquil beaches, discover the best spots across the city.</p>
+  </header>
+
+  <section class="destination-gallery">
+    <div class="destination-card">
+      <img src="Image6.jpg" alt="Burj Khalifa" />
+      <h3>Burj Khalifa</h3>
+      <p>The world’s tallest building, with panoramic views and a sky lounge.</p>
+    </div>
+
+    <div class="destination-card">
+      <img src="Palm-jumerah.jpg" alt="Palm Jumeirah" />
+      <h3>Palm Jumeirah</h3>
+      <p>A man-made marvel shaped like a palm tree, home to luxury resorts.</p>
+    </div>
+
+    <div class="destination-card">
+      <img src="Dubai-frame.jpg" alt="Dubai Frame" />
+      <h3>Dubai Frame</h3>
+      <p>A picture-perfect landmark that frames views of old and new Dubai.</p>
+    </div>
+
+    <div class="destination-card">
+      <img src="image3.jpg" alt="Jumeirah Mosque" />
+      <h3>Jumeirah Mosque</h3>
+      <p>One of Dubai’s most iconic mosques, open to all for guided tours.</p>
+    </div>
+
+    <div class="destination-card">
+      <img src="image7.jpg" alt="Dubai Marina" />
+      <h3>Dubai Marina</h3>
+      <p>Stunning waterfront area filled with skyscrapers, yachts, and restaurants.</p>
+    </div>
+
+    <div class="destination-card">
+      <img src="jhonwayne-pumaras-GrM3kKeH6zU-unsplash.jpg"Dubai Miracle Garden" />
+      <h3>Miracle Garden</h3>
+      <p>The world’s largest natural flower garden — colorful and magical.</p>
+    </div>
+  </section>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+  <footer class="footer">
+    <p>© 2025 Visit Dubai | Designed by Victory 💚</p>
+  </footer>
+</body>
+</html>
